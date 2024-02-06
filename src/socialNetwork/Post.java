@@ -48,6 +48,37 @@ public abstract class Post {
 		this.comments = comments;
 	}
 	
+	public void addLike() {
+		int likes = this.getNumOfLikes() + 1;
+		this.setNumOfLikes(likes);
+	}
+	
+	public void removeLike() {
+		int likes = this.getNumOfLikes() - 1;
+		this.setNumOfLikes(likes);
+	}
+	/**
+	 * In this Method a Post will be added to the ArrayList Comments of a Post
+	 * @param post
+	 */
+	public void addComment(Post post) {
+		comments.add(post); 
+	}
+	/**
+	 * In this Method a Post will be removed from the ArrayList Comments of a Post
+	 * @param post is the complete Post which should be removed 
+	 */
+	public void removeComment(Post post) {
+		comments.remove(post);
+	}
+	/**
+	 * In this Method a Post will be removed from the ArrayList Comments of a Post
+	 * @param index is the position of the Post which should be removed 
+	 */
+	public void removeComment(int index) {
+		comments.remove(index);
+	}
+	
 	
 	
 	
