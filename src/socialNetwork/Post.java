@@ -47,12 +47,16 @@ public abstract class Post {
 	public void setComments(ArrayList<Post> comments) {
 		this.comments = comments;
 	}
-	
+	/**
+	 * This Method add a Like to this Post
+	 */
 	public void addLike() {
 		int likes = this.getNumOfLikes() + 1;
 		this.setNumOfLikes(likes);
 	}
-	
+	/**
+	 * This Method removes a like from this Post
+	 */
 	public void removeLike() {
 		int likes = this.getNumOfLikes() - 1;
 		this.setNumOfLikes(likes);
