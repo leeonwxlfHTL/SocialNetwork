@@ -14,7 +14,10 @@ public class NewsFeed {
 	public ArrayList<Post> getPosts() {
 		return posts;
 	}
-
+	/**
+	 * in this Method a Post will be added to the Feed
+	 * @param post this is the Post which will be added
+	 */
 	public void addPostToFeed(Post post) {
 		posts.add(post); 
 	}
